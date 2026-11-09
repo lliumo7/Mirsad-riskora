@@ -622,3 +622,179 @@ body.theme-dark .drawer-logout,body.theme-dark .logout-button{background:#dc2626
 .risk-detail-list-icon .ico-check{width:15px;height:15px}
 .selectPackage .ico-check{width:14px;height:14px;margin-inline-end:4px}
 .hint .ico-check,.warning .ico-check,.risk-detail-note .ico-check,.empty-docs-note .ico-check{width:16px;height:16px;stroke-width:1.8}
+
+/* Directional / utility icons (replace text arrows) */
+.ico-arrow,.ico-down,.ico-chev,.ico-close{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;width:1.1em;height:1.1em;vertical-align:-.2em;flex-shrink:0}
+.ico-chev{width:18px;height:18px}
+.ico-close{width:18px;height:18px}
+[dir="rtl"] .ico-arrow,[dir="rtl"] .ico-chev{transform:scaleX(-1)}
+.page-back-button .back-arrow{display:inline-grid;place-items:center}
+.page-back-button .back-arrow .ico-arrow{width:20px;height:20px;margin:0}
+.policy-photo-close .ico-close,#chatClose .ico-close,#drawerClose .ico-close{display:block;margin:auto}
+
+/* English (LTR): drawer slides from the left edge */
+body.lang-en .side-drawer{transform:translateX(-110%);box-shadow:15px 0 45px rgba(11,46,101,.13)}
+body.lang-en .side-drawer.open{transform:translateX(0)}
+[dir="rtl"] .drawer-links i{transform:rotate(-135deg);margin-left:0;margin-right:4px}
+/* LTR mirror of physical RTL rules (English mode) */
+body.lang-en .quick{text-align:left}
+body.lang-en .request-code b{margin-right:0;margin-left:10px}
+body.lang-en .timeline{text-align:left}
+body.lang-en .package li:before{margin-left:0;margin-right:7px}
+body.lang-en .recommend{left:auto;right:12px}
+body.lang-en .offer-top .demo{margin-right:0;margin-left:auto}
+body.lang-en .details-grid>div{text-align:left}
+body.lang-en .policy-card{text-align:left}
+body.lang-en .toast{left:auto;right:22px}
+@media(max-width:620px){body.lang-en .request-row .link{margin-right:0;margin-left:auto}}
+body.lang-en .payment-summary>div b{text-align:right}
+body.lang-en .about-item b{text-align:right}
+body.lang-en .top nav{right:auto;left:0;border-left:0;border-right:1px solid var(--app-line)}
+body.lang-en .top nav button{text-align:left}
+body.lang-en .top nav button.active:after{right:auto;left:0}
+body.lang-en main{margin-right:0;margin-left:236px}
+body.lang-en footer{margin-right:0;margin-left:236px}
+body.lang-en .settings-tab{text-align:left}
+body.lang-en .appearance-choice{text-align:left}
+body.lang-en .clean-list{padding-right:0;padding-left:22px}
+body.lang-en .switch span:before{right:auto;left:3px}
+body.lang-en .chat-launcher{left:auto;right:24px}
+body.lang-en .chat-widget{left:auto;right:24px}
+body.lang-en .user-message{margin-right:0;margin-left:auto}
+body.lang-en .chat-quick button{text-align:left}
+@media(max-width:1000px){body.lang-en main,body.lang-en footer{margin-right:0;margin-left:210px}}
+@media(max-width:760px){body.lang-en .chat-launcher{left:auto;right:12px}
+body.lang-en .chat-widget{left:auto;right:8px}}
+@media (min-width: 761px){body.lang-en main,body.lang-en footer{margin-right:0 !important;margin-left:0 !important}}
+body.lang-en main{margin-right:0 !important;margin-left:0 !important}
+body.lang-en footer{margin-right:0 !important;margin-left:0 !important}
+@media(max-width:760px){body.lang-en .mobile-nav{padding-left:0;padding-right:4px;padding-right:0;padding-left:4px}}
+body.lang-en .side-drawer{right:auto;left:0;border-left:0;border-right:1px solid #d7e7f5}
+body.lang-en .drawer-links button{text-align:left}
+@media(max-width:700px){body.lang-en .topright{margin-right:0;margin-left:auto}}
+@media(max-width:700px){body.lang-en .document-top>.status{margin-right:0;margin-left:58px}}
+body.lang-en .risk-detail-art:before{left:auto;right:-50px}
+body.lang-en .risk-detail-art:after{right:auto;left:-45px}
+body.lang-en .risk-detail-intro{text-align:left}
+body.lang-en .drawer-logout{text-align:left}
+body.lang-en .renewal-conditions ul{padding-right:0;padding-left:20px}
+body.lang-en .renewal-conditions li{padding-right:0;padding-left:2px}
+body.lang-en .quote-table th,body.lang-en .quote-table td{text-align:left}
+body.lang-en .quote-kv b{text-align:right}
+body.lang-en .quote-terms-list{padding-right:0;padding-left:22px}
+body.lang-en .policy-extra-grid>div{text-align:left}
+body.lang-en .policy-photo-close{left:auto;right:18px}
+body.lang-en .document-card>.record-select{float:left;margin:0 8px 6px 0}
+body.lang-en .payment-success-card{text-align:left}
+
+/* ===== Dark mode: complete coverage (all pages) ===== */
+body.theme-dark{color-scheme:dark}
+body.theme-dark :where(main h1,main h2,main h3,main h4,main b,main strong,main label,main summary,main th,.toast){color:#e7f0f7}
+body.theme-dark :where(main p,main li,main small,main em,main td,main .muted,main .hint,main dd,main dt){color:#a8bccd}
+body.theme-dark :where(main a.link,main button.link,main .link){color:#7fc4ff}
+body.theme-dark .stepper,body.theme-dark .type,body.theme-dark .hint,body.theme-dark .haz-option,body.theme-dark .asset-summary,
+body.theme-dark .risk-detail-tabs,body.theme-dark .risk-detail-content,body.theme-dark .risk-detail-note,body.theme-dark .request-code,
+body.theme-dark .accepted,body.theme-dark .quote-expiry,body.theme-dark .quote-subpanel,body.theme-dark .quote-kv,body.theme-dark .payment-success-card,
+body.theme-dark .summary-tile,body.theme-dark .tabs,body.theme-dark .data-alert,body.theme-dark .data-region-chip,body.theme-dark .data-stat,
+body.theme-dark .settings-note,body.theme-dark .warning,body.theme-dark .language-card,body.theme-dark .empty-docs-note,body.theme-dark .renewal-reward,
+body.theme-dark .renewal-calc,body.theme-dark .details-grid>div,body.theme-dark .policy-card,body.theme-dark .request-row,body.theme-dark .doc-row,
+body.theme-dark .record-row,body.theme-dark .notice,body.theme-dark .notice-card,body.theme-dark .faq-list details,body.theme-dark .timeline .tl,
+body.theme-dark .quote-card,body.theme-dark .offer-card,body.theme-dark .claim-box,body.theme-dark .about-card,body.theme-dark .contact-card,
+body.theme-dark .indicator-card,body.theme-dark .meter-card,body.theme-dark .status-card,body.theme-dark .empty,body.theme-dark .empty-state,
+body.theme-dark .quote-subpanel *:where(div,section){border-color:#2b4052}
+body.theme-dark .stepper,body.theme-dark .type,body.theme-dark .hint,body.theme-dark .haz-option,body.theme-dark .asset-summary,
+body.theme-dark .risk-detail-tabs,body.theme-dark .risk-detail-content,body.theme-dark .risk-detail-note,body.theme-dark .request-code,
+body.theme-dark .quote-expiry,body.theme-dark .quote-subpanel,body.theme-dark .payment-success-card,body.theme-dark .summary-tile,
+body.theme-dark .tabs,body.theme-dark .data-alert,body.theme-dark .data-region-chip,body.theme-dark .data-stat,body.theme-dark .settings-note,
+body.theme-dark .language-card,body.theme-dark .empty-docs-note,body.theme-dark .details-grid>div,body.theme-dark .policy-card,
+body.theme-dark .request-row,body.theme-dark .doc-row,body.theme-dark .record-row,body.theme-dark .faq-list details{background:#172a3b;border-color:#2b4052}
+body.theme-dark .type.selected,body.theme-dark .risk-detail-tab.active,body.theme-dark .haz-option:has(input:checked){background:#203e56;border-color:#4a86b8;color:#d6eafa}
+body.theme-dark .accepted{background:#16372c;border-color:#2c6b52}
+body.theme-dark .quote-kv.total{background:#1c3a52}
+body.theme-dark .warning,body.theme-dark .data-alert,body.theme-dark .status.pending{background:#3a3220;border-color:#6d5a2a;color:#f2d79a}
+body.theme-dark .warning *,body.theme-dark .data-alert *,body.theme-dark .status.pending *{color:#f2d79a}
+body.theme-dark input,body.theme-dark select,body.theme-dark textarea{background:#142535;border-color:#30495d;color:#eaf4fb}
+body.theme-dark input::placeholder,body.theme-dark textarea::placeholder{color:#7f97ab}
+body.theme-dark .btn.outline,body.theme-dark button.outline,body.theme-dark .tabs button,body.theme-dark .requests-tabs button,body.theme-dark .risk-detail-tab,body.theme-dark .page-back-button{background:#172a3b;color:#cfe6f8;border-color:#35536a}
+body.theme-dark .btn.outline:hover,body.theme-dark .tabs button:hover{background:#203e56}
+body.theme-dark .tabs button.active,body.theme-dark .requests-tabs button.active{background:#1f6fb2;color:#fff;border-color:#1f6fb2}
+body.theme-dark .btn.outline.quote-reject{color:#ffb4b4;border-color:#7a4448}
+/* icon chips and badges */
+body.theme-dark .summary-icon,body.theme-dark .pkg-symbol,body.theme-dark .haz-icon,body.theme-dark .notice-icon,body.theme-dark .about-mark,
+body.theme-dark .settings-tab-icon,body.theme-dark .renewal-symbol,body.theme-dark .renewal-calc-icon,body.theme-dark .payment-package-icon,
+body.theme-dark .type i,body.theme-dark .quick i,body.theme-dark .journey-steps span,body.theme-dark .journey-tag,body.theme-dark .risk-detail-badge,
+body.theme-dark .recommend,body.theme-dark .stepper span,body.theme-dark .heading-icon,body.theme-dark .demo{background:#1d3a53;color:#82c6ff;border-color:#2f5471}
+body.theme-dark .summary-icon.green,body.theme-dark .big-check,body.theme-dark .amend-confirm-icon,body.theme-dark .payment-success-mark,body.theme-dark .payment-success-badge,body.theme-dark .accepted>span{background:#1a4535;color:#5fe0a4}
+body.theme-dark .payment-success-mark{box-shadow:0 0 0 12px #14352a}
+body.theme-dark .summary-icon.amber{background:#443820;color:#f4c868}
+body.theme-dark .stepper span.active,body.theme-dark .stepper .active span,body.theme-dark .stepper span.done{background:#1f6fb2;color:#fff}
+body.theme-dark .risk-art{background:#1d3a53!important}
+body.theme-dark .risk-art svg{color:#82c6ff}
+body.theme-dark .big-check svg,body.theme-dark .payment-success-mark svg{color:#5fe0a4}
+body.theme-dark .eyebrow-dark{color:#82c6ff}
+body.theme-dark .status{background:#1d3a53;color:#bfe0fb}
+/* payment success / renewal pages */
+body.theme-dark .payment-success-hero h1,body.theme-dark .payment-success-hero h2{color:#e7f0f7}
+body.theme-dark .renewal-hero,body.theme-dark #renewal :where(h2,b,strong){color:#e7f0f7}
+body.theme-dark #renewal :where(p,small,li,span){color:#a8bccd}
+body.theme-dark #renewal .renewal-symbol,body.theme-dark #renewal .renewal-calc-icon{color:#82c6ff}
+body.theme-dark .package.featured{border-color:#4a86b8}
+body.theme-dark .package .price,body.theme-dark .package h3{color:#e7f0f7}
+body.theme-dark .package li:before{background:#4fd39b}
+body.theme-dark .package li{border-color:#2b4052}
+body.theme-dark .chat-panel,body.theme-dark #chatWidget,body.theme-dark .chat-box{background:#172a3b;color:#e7f0f7;border-color:#2b4052}
+body.theme-dark .chat-msg.bot,body.theme-dark .msg.bot,body.theme-dark .chat-message.bot{background:#203e56;color:#e7f0f7}
+body.theme-dark .toast{background:#203e56}
+body.theme-dark .data-region-chip *,body.theme-dark .summary-tile *{border-color:#2b4052}
+body.theme-dark table th{background:#203e56;color:#d6eafa}
+body.theme-dark table td{color:#cfe0ee;border-color:#2b4052}
+body.theme-dark .meter{background:#223a50}
+body.theme-dark hr{border-color:#2b4052}
+body.theme-dark footer{color:#8fa6b8}
+body.theme-dark .haz-icon,body.theme-dark .haz-option .haz-icon{background:#1d3a53!important;color:#82c6ff!important}
+body.theme-dark .request-code+*,body.theme-dark .timeline i{border-color:#35536a}
+body.theme-dark .timeline i:not(.done){background:#172a3b}
+body.theme-dark .tl.done i{background:#17a86b;color:#fff}
+body.theme-dark .request-card i,body.theme-dark .review-steps i,body.theme-dark #review i{background:#1d3a53;color:#82c6ff}
+body.theme-dark #review .tl.done i{background:#17a86b;color:#fff}
+body.theme-dark .btn.outline.quote-reject{color:#ffb4b4!important;background:#2b1c20!important;border-color:#7a4448!important}
+body.theme-dark .data-region-chip{color:#cfe6f8}
+body.theme-dark .data-region-chip b,body.theme-dark .data-region-chip span{color:#cfe6f8}
+body.theme-dark .settings-note,body.theme-dark p.settings-note{background:#172a3b;border-color:#2b4052;color:#a8bccd}
+body.theme-dark #notifications span:not(.notice-icon),body.theme-dark #about span{background:transparent}
+body.theme-dark .notice-icon,body.theme-dark #about span.about-mark,body.theme-dark #about .about-icon{background:#1d3a53;color:#82c6ff}
+body.theme-dark .renewal-example-card,body.theme-dark .renewal-total,body.theme-dark .renewal-info-icon{background:#172a3b!important;border-color:#2b4052!important;color:#e7f0f7}
+body.theme-dark .renewal-example-card :where(b,strong,h3){color:#e7f0f7}
+body.theme-dark .renewal-example-card :where(span,small,p){color:#a8bccd}
+body.theme-dark .renewal-total :where(b,strong){color:#e7f0f7}
+body.theme-dark .renewal-total span{color:#a8bccd}
+body.theme-dark .renewal-info-icon{color:#82c6ff}
+body.theme-dark .menu-toggle,body.theme-dark .avatar{background:#172a3b;border-color:#35536a;color:#cfe6f8}
+body.theme-dark .menu-toggle span{background:#cfe6f8}
+body.theme-dark .page-back-button{color:#cfe6f8}
+body.theme-dark .chat-launcher{background:#1f6fb2;color:#fff}
+body.theme-dark .welcome-line,body.theme-dark .hero :where(h1,h2,p,small,b,strong,span){color:inherit}
+body.theme-dark .payment-success-wrap{background:#13273a;border-color:#2b4052}
+body.theme-dark .payment-success-wrap :where(h1,h2,h3,b,strong){color:#e7f0f7}
+body.theme-dark .payment-success-wrap :where(p,small,span:not(.payment-success-badge)){color:#a8bccd}
+body.theme-dark .renewal-hero{background:linear-gradient(115deg,#172a3b,#1b3550);border-color:#2b4052}
+body.theme-dark .renewal-rate,body.theme-dark .renewal-conditions,body.theme-dark .renewal-reward{background:#172a3b!important;border-color:#2b4052!important}
+body.theme-dark .renewal-reward :where(b,strong,h3,div){color:#e7f0f7}
+body.theme-dark .renewal-reward :where(small,p,span){color:#a8bccd}
+body.theme-dark .renewal-basic{background:linear-gradient(150deg,#172a3b,#173a30)!important;color:#5fe0a4!important}
+body.theme-dark .renewal-balanced{background:linear-gradient(150deg,#172a3b,#17375a)!important;color:#82c6ff!important}
+body.theme-dark .renewal-business{background:linear-gradient(150deg,#172a3b,#2a2350)!important;color:#b9a2ff!important}
+body.theme-dark .renewal-rate :where(span,small,p){color:#a8bccd!important}
+body.theme-dark .renewal-rate :where(strong,b){color:inherit!important}
+body.theme-dark .renewal-symbol{background:#1d3a53;color:inherit}
+body.theme-dark .renewal-conditions :where(b,strong){color:#e7f0f7}
+body.theme-dark .chat-widget{background:#172a3b;border-color:#2b4052}
+body.theme-dark .chat-messages{background:#13273a}
+body.theme-dark .chat-messages :where(.bot,.me,.user,[class*="bubble"],[class*="msg"]){background:#203e56;color:#e7f0f7;border-color:#2b4052}
+body.theme-dark .chat-messages .me,body.theme-dark .chat-messages .user{background:#1f6fb2;color:#fff}
+body.theme-dark .chat-messages :where(p,div,span){color:inherit}
+body.theme-dark .chat-quick button{background:#172a3b;border-color:#35536a;color:#bfe0fb}
+body.theme-dark .chat-form{border-color:#2b4052}
+body.theme-dark .chat-form input{background:#142535;border-color:#30495d;color:#eaf4fb}
+body.theme-dark .bot-message{background:#203e56;border-color:#2b4052;color:#e7f0f7}
+body.theme-dark .user-message{background:#1f6fb2;color:#fff}
