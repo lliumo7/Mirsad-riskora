@@ -798,3 +798,12 @@ body.theme-dark .chat-form{border-color:#2b4052}
 body.theme-dark .chat-form input{background:#142535;border-color:#30495d;color:#eaf4fb}
 body.theme-dark .bot-message{background:#203e56;border-color:#2b4052;color:#e7f0f7}
 body.theme-dark .user-message{background:#1f6fb2;color:#fff}
+
+
+/* ===== Mirsad Riskora icon system: Lucide, 24px grid, one optical stroke weight ===== */
+svg[data-icon] :is(path,circle,rect,line){vector-effect:non-scaling-stroke;stroke-width:1.75px;stroke-linecap:round;stroke-linejoin:round}
+.payment-package-icon svg[data-icon] :is(path,circle,rect,line),.reward-icon svg[data-icon] :is(path,circle,rect,line),
+.renewal-hero-mark svg[data-icon] :is(path,circle,rect,line),.about-mark svg[data-icon] :is(path,circle,rect,line),
+.payment-success-mark svg[data-icon] :is(path,circle,rect,line),#indicatorGlyph svg[data-icon] :is(path,circle,rect,line),
+.risk-art svg[data-icon] :is(path,circle,rect,line){stroke-width:2px}
+[dir="ltr"] .ico-send{transform:none}
