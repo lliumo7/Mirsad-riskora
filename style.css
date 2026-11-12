@@ -807,3 +807,14 @@ svg[data-icon] :is(path,circle,rect,line){vector-effect:non-scaling-stroke;strok
 .payment-success-mark svg[data-icon] :is(path,circle,rect,line),#indicatorGlyph svg[data-icon] :is(path,circle,rect,line),
 .risk-art svg[data-icon] :is(path,circle,rect,line){stroke-width:2px}
 [dir="ltr"] .ico-send{transform:none}
+
+/* Coverage duration selector */
+.coverage-duration{margin:18px 0 20px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;border:1px solid var(--line,#d8e5f1);border-radius:18px;background:#fff}
+.duration-heading h2{margin:0 0 5px;font-size:1.12rem;color:var(--navy,#173f60)}
+.duration-heading p,.duration-hint{margin:0;color:var(--muted,#8295a8);font-size:.88rem}
+.duration-options{display:flex;gap:10px;flex-wrap:wrap}
+.duration-option{min-width:116px;padding:12px 18px;border:1px solid #d5e3f0;border-radius:14px;background:#fff;color:#244d70;font:inherit;font-weight:700;cursor:pointer;transition:.18s}
+.duration-option:hover{border-color:#1682df}
+.duration-option.selected{border:2px solid #087bea;background:#eef7ff;color:#075fae;box-shadow:0 0 0 2px rgba(8,123,234,.06)}
+.duration-hint{width:100%;text-align:right}
+@media(max-width:700px){.coverage-duration{align-items:stretch}.duration-options{width:100%}.duration-option{flex:1;min-width:calc(50% - 8px)}}
