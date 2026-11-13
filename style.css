@@ -856,3 +856,83 @@ body.theme-dark .row-icon{background:#1d3a53;color:#82c6ff}
  .offer-top>div{flex:1 1 0;min-width:150px}
  .offer-top .demo,body.lang-en .offer-top .demo{margin:0!important;margin-inline-start:58px!important}
 }
+
+
+/* Mirsad Riskora — refined home hero and review status */
+.hero{
+  min-height:460px;
+  grid-template-columns:1fr 1.04fr;
+  background:linear-gradient(112deg,#062b4d 0%,#064b7b 58%,#0875a8 100%);
+  border-radius:26px;
+  box-shadow:0 18px 42px rgba(5,54,91,.18);
+}
+.hero-copy{
+  padding:48px clamp(28px,4vw,58px);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+}
+.hero .welcome-line{font-size:15px;margin:0 0 14px;color:#e4f4ff}
+.hero .eyebrow{font-size:14px;letter-spacing:.1px}
+.hero h1{font-size:clamp(42px,4.2vw,58px);line-height:1.2;margin:13px 0 8px;font-weight:850}
+.hero h2{font-size:clamp(22px,2.2vw,29px);line-height:1.5;margin:0 0 15px;font-weight:750}
+.hero h1:after{content:"";display:block;width:145px;height:7px;border-radius:9px;background:#24a86b;margin-top:12px}
+.hero-copy>p:not(.welcome-line){font-size:15px;line-height:2.05;max-width:560px;color:#e4f2fc;margin:0 0 22px}
+.hero .btn.white{font-size:15px;padding:16px 25px;border-radius:15px;margin-top:2px;box-shadow:0 9px 22px rgba(0,0,0,.14)}
+.hero-visual{position:relative;min-height:460px;overflow:hidden;isolation:isolate;background:#07395d}
+.hero-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2}
+.hero-visual-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(2,31,54,.92),rgba(3,45,76,.06) 58%,rgba(4,40,68,.08));z-index:-1}
+.hero-highlights{position:absolute;bottom:25px;left:24px;right:24px;display:flex;align-items:stretch;justify-content:space-around;gap:12px;padding:15px 12px;background:rgba(3,35,59,.72);border:1px solid rgba(255,255,255,.22);border-radius:17px;backdrop-filter:blur(10px);color:#fff}
+.hero-highlights>div{display:flex;flex:1;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:4px;min-width:0}
+.hero-highlights .highlight-icon{font-size:27px;line-height:1;color:#d8f1ff}
+.hero-highlights b{font-size:13px}
+.hero-highlights small{font-size:11px;color:#d6e8f5}
+.hero-highlights>i{width:1px;background:rgba(255,255,255,.35);margin:5px 0}
+.journey-card{padding:25px 27px;border-radius:20px;margin-top:22px;box-shadow:0 10px 28px rgba(20,73,111,.07)}
+.journey-title h2{font-size:23px}
+.journey-tag{font-size:12px;padding:9px 14px}
+.journey-steps{gap:14px;margin-top:22px;background:#f3f8fd;border-radius:17px;padding:17px}
+.journey-steps>div{grid-template-columns:48px 1fr;column-gap:12px}
+.journey-steps>div>span{width:48px;height:48px;border-radius:15px;font-size:17px}
+.journey-steps b{font-size:14px}
+.journey-steps small{font-size:12px}
+.journey-steps>i{min-width:16px}
+.tl.current{background:linear-gradient(90deg,#fff9e9,#fff4d8);border:1px solid #f3dfad;border-radius:15px;padding:17px 14px;margin:8px -14px}
+.tl.current .review-icon{width:38px;height:38px;background:#fff0c7;color:#bd8100;border:1px solid #f2d58c}
+.tl.current .review-icon svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tl.current b{font-size:14px}
+.tl.current small{font-size:12px;line-height:1.8;max-width:610px}
+.review-hint{background:#edf6ff;border-color:#c9e3ff;color:#185b91;border-radius:13px;padding:14px 17px;line-height:1.9}
+.review-hint b{font-weight:800}
+@media(max-width:900px){
+ .hero{min-height:390px}
+ .hero-visual{min-height:390px}
+ .hero-copy{padding:34px 28px}
+ .hero h1{font-size:40px}
+ .journey-steps{gap:8px;padding:13px}
+ .journey-steps>div{grid-template-columns:40px 1fr;column-gap:8px}
+ .journey-steps>div>span{width:40px;height:40px}
+}
+@media(max-width:620px){
+ .hero{grid-template-columns:1fr;min-height:0}
+ .hero-copy{padding:30px 23px}
+ .hero h1{font-size:36px}
+ .hero h2{font-size:21px}
+ .hero-copy>p:not(.welcome-line){font-size:13px}
+ .hero-visual{min-height:245px}
+ .hero-highlights{left:12px;right:12px;bottom:12px;padding:11px 7px;gap:6px}
+ .hero-highlights .highlight-icon{font-size:22px}
+ .hero-highlights b{font-size:10px}
+ .hero-highlights small{font-size:9px}
+ .journey-card{padding:17px 14px}
+ .journey-title h2{font-size:18px}
+ .journey-steps{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}
+ .journey-steps>i{display:none}
+ .journey-steps>div{grid-template-columns:38px 1fr}
+ .journey-steps>div>span{width:38px;height:38px}
+ .journey-steps b{font-size:11px}
+ .journey-steps small{font-size:10px}
+ .tl.current{margin:7px -8px;padding:13px 9px}
+ .tl.current small{font-size:10px}
+}
